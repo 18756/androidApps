@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".FullscreenActivity">
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="444dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/budgetText"
+                android:layout_width="215dp"
+                android:layout_height="111dp"
+                android:text="Budget: "
+                android:gravity="center_vertical|right"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/budgetValue"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:paddingLeft="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/moneyBoxText"
+                android:layout_width="215dp"
+                android:layout_height="111dp"
+                android:text="Money Box: "
+                android:gravity="center_vertical|right"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/moneyBoxValue"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:paddingLeft="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dailyMoneyText"
+                android:layout_width="215dp"
+                android:layout_height="111dp"
+                android:text="Daily money: "
+                android:gravity="center_vertical|right"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/dailyMoneyValue"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:paddingLeft="5dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/daysLeftText"
+                android:layout_width="215dp"
+                android:layout_height="111dp"
+                android:text="Days left: "
+                android:gravity="center_vertical|right"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/daysLeftValue"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:text="0"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:paddingLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp">
+
+        <Button
+            android:id="@+id/spendMoney"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="5dp"
+            android:text="Spend money"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/eraseBudget"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="187.5dp"
+            android:layout_marginTop="5dp"
+            android:text="Erase Budget"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/recount"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="12.5dp"
+            android:layout_marginTop="105dp"
+            android:text="Recount"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="187.5dp"
+            android:layout_marginTop="105dp"
+            android:text="Reset"
+            android:textSize="20dp"/>
+
+    </FrameLayout>
+
+</FrameLayout>

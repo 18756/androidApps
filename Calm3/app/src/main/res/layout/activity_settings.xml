@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_settings"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.sasha.calm.Settings">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/radius_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-235dp"
+            android:layout_marginLeft="-55dp"
+            android:text="Radius" />
+
+        <EditText
+            android:id="@+id/radius"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-235dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/textViewpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-235dp"
+            android:layout_marginLeft="35dp"
+            android:text="px" />
+
+
+        <TextView
+            android:id="@+id/speed_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-155dp"
+            android:layout_marginLeft="-55dp"
+            android:text="Speed" />
+
+
+        <EditText
+            android:id="@+id/speed"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-155dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-155dp"
+            android:layout_marginLeft="45dp"
+            android:text="px/ms" />
+
+        <TextView
+            android:id="@+id/stroke_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-75dp"
+            android:layout_marginLeft="-60dp"
+            android:layout_gravity="center"
+            android:text="   Border\nthickness" />
+
+
+        <EditText
+            android:id="@+id/stroke"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/stroke_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-75dp"
+            android:layout_marginLeft="35dp"
+            android:text="px" />
+
+        <Switch
+            android:id="@+id/fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Paint inside" />
+
+        <TextView
+            android:id="@+id/strokewsde_view2_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="-60dp"
+            android:text="Brightness\n    of balls" />
+
+        <Spinner
+            android:id="@+id/background"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="190dp"
+            android:layout_gravity="center"
+            android:background="#c22348"
+            android:text="Confirm" />
+
+
+    </FrameLayout>
+
+</FrameLayout>

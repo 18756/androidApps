@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".EraseBudget">
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="111dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="111dp">
+
+            <TextView
+                android:id="@+id/addToBudgetText"
+                android:layout_width="215dp"
+                android:layout_height="111dp"
+                android:gravity="center_vertical|right"
+                android:text="Add to budget: "
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/addToBudgetValue"
+                android:layout_width="135dp"
+                android:layout_height="111dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="430dp"
+        android:text="Add"
+        android:textSize="30dp"/>
+
+</FrameLayout>
